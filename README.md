@@ -1,29 +1,34 @@
 # AlgoBank
 
-A collection of algorithm & data structure implementations in Python and JavaScript. Each one includes Big O analysis and unit tests.
+![Python](https://img.shields.io/badge/Python-3.8+-blue?logo=python&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow?logo=javascript&logoColor=white)
+![Tests](https://img.shields.io/badge/tests-passing-brightgreen)
+![License](https://img.shields.io/badge/license-MIT-green)
 
-I started this project to solidify my understanding of CS fundamentals and have a quick reference I can come back to. Most implementations prioritize readability over micro-optimizations.
+A collection of 50+ algorithm & data structure implementations in Python and JavaScript. Each one includes Big O analysis and unit tests.
+
+I started this project to solidify my understanding of CS fundamentals and have a quick reference I can come back to. Most implementations prioritize readability over micro-optimizations — if you're looking for production-grade code, you'd probably use the language's standard library. This is for learning.
 
 ## Structure
 
 ```
 python/
-  sorting/          # sorting algorithms
-  searching/        # searching algorithms
-  data_structures/  # stacks, queues, linked lists, hash maps
-  trees/            # BST, AVL, heap, trie
-  graphs/           # graph traversals, Dijkstra, topological sort
-  tests/            # pytest tests
+  sorting/                # sorting algorithms
+  searching/              # searching algorithms
+  data_structures/        # stacks, queues, linked lists, hash maps
+  trees/                  # BST, AVL, heap, trie
+  graphs/                 # graph traversals, Dijkstra, topological sort
+  dynamic_programming/    # classic DP problems
+  tests/                  # pytest tests
 javascript/
-  sorting/          # sorting algorithms
-  searching/        # searching algorithms
-  data_structures/  # stacks, queues, linked lists, hash maps
-  trees/            # BST, heap, trie
-  graphs/           # graph traversals, Dijkstra, topological sort
-  __tests__/        # jest tests
+  sorting/                # sorting algorithms
+  searching/              # searching algorithms
+  data_structures/        # stacks, queues, linked lists, hash maps
+  trees/                  # BST, heap, trie
+  graphs/                 # graph traversals, Dijkstra, topological sort
+  dynamic_programming/    # classic DP problems
+  __tests__/              # jest tests
 ```
-
-Dynamic programming coming soon.
 
 ## Algorithms
 
@@ -77,6 +82,20 @@ Dynamic programming coming soon.
 | Dijkstra        | ✅     | ✅         | O((V+E) log V) | Shortest path, non-negative weights |
 | Topological Sort| ✅     | ✅         | O(V + E) | Kahn's algorithm, cycle detection |
 
+### Dynamic Programming
+
+| Problem            | Python | JavaScript | Time       | Space |
+|-------------------|--------|------------|------------|-------|
+| Fibonacci         | ✅     | ✅         | O(n)       | O(1) bottom-up |
+| 0/1 Knapsack      | ✅     | ✅         | O(n·W)     | O(W) optimized |
+| LCS               | ✅     | ✅         | O(m·n)     | O(m·n) |
+| LIS               | ✅     | ✅         | O(n log n) | O(n) |
+| Coin Change       | ✅     | ✅         | O(amount·n)| O(amount) |
+| Edit Distance     | ✅     | ✅         | O(m·n)     | O(m·n) |
+| Max Subarray      | ✅     | ✅         | O(n)       | O(1) |
+| Climbing Stairs   | ✅     | ✅         | O(n)       | O(1) |
+| Unique Paths      | ✅     | ✅         | O(m·n)     | O(n) |
+
 ## Running Tests
 
 **Python**
@@ -91,6 +110,10 @@ cd javascript
 npm install
 npm test
 ```
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 
