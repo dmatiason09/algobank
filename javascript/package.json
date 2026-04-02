@@ -1,0 +1,11 @@
+{
+  "name": "algobank-js",
+  "version": "1.0.0",
+  "description": "Algorithm and data structure implementations in JavaScript",
+  "scripts": {
+    "test": "jest --verbose"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
