@@ -11,15 +11,19 @@ python/
   sorting/          # sorting algorithms
   searching/        # searching algorithms
   data_structures/  # stacks, queues, linked lists, hash maps
+  trees/            # BST, AVL, heap, trie
+  graphs/           # graph traversals, Dijkstra, topological sort
   tests/            # pytest tests
 javascript/
   sorting/          # sorting algorithms
   searching/        # searching algorithms
   data_structures/  # stacks, queues, linked lists, hash maps
+  trees/            # BST, heap, trie
+  graphs/           # graph traversals, Dijkstra, topological sort
   __tests__/        # jest tests
 ```
 
-More categories (trees, graphs, dynamic programming) coming soon.
+Dynamic programming coming soon.
 
 ## Algorithms
 
@@ -54,6 +58,24 @@ More categories (trees, graphs, dynamic programming) coming soon.
 | Queue       | ✅     | ✅         | FIFO, enqueue/dequeue in O(1) |
 | Linked List | ✅     | ✅         | Singly linked, with reverse |
 | Hash Map    | ✅     | ✅         | Separate chaining, auto-resize |
+
+### Trees
+
+| Structure  | Python | JavaScript | Notes |
+|-----------|--------|------------|-------|
+| BST       | ✅     | ✅         | Insert, delete, search, traversals |
+| AVL Tree  | ✅     |            | Self-balancing BST with rotations |
+| Min Heap  | ✅     | ✅         | Array-based binary heap |
+| Trie      | ✅     | ✅         | Prefix tree with autocomplete |
+
+### Graphs
+
+| Algorithm        | Python | JavaScript | Time     | Notes |
+|-----------------|--------|------------|----------|-------|
+| BFS             | ✅     | ✅         | O(V + E) | Breadth-first traversal |
+| DFS             | ✅     | ✅         | O(V + E) | Iterative + recursive (Python) |
+| Dijkstra        | ✅     | ✅         | O((V+E) log V) | Shortest path, non-negative weights |
+| Topological Sort| ✅     | ✅         | O(V + E) | Kahn's algorithm, cycle detection |
 
 ## Running Tests
 
